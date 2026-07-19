@@ -1,0 +1,44 @@
+.content-card {
+    width: 200px;
+    flex-shrink: 0;
+
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    transition: transform var(--transition-fast);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+}
+
+.content-poster {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-border);
+    color: var(--color-secondary);
+}
+
+.content-details {
+    padding: var(--space-md);
+}
+
+.content-title {
+    margin-bottom: var(--space-sm);
+}
+
+.content-meta {
+    margin: var(--space-xs) 0;
+    color: var(--color-secondary);
+}

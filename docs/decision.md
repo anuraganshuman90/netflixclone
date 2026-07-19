@@ -22,3 +22,32 @@ Upgrade to a modern Node version after:
 ## Status
 
 Accepted
+
+# User Experience
+
+## Intentional Discovery
+
+The user already knows what they want.
+
+The application should help them reach it quickly.
+
+Examples:
+- Search
+- Genre
+- Director
+- Year
+- Runtime
+
+---
+
+## Exploratory Discovery
+
+The user does not know what they want.
+
+The application should provide a starting point.
+
+Examples:
+- Banner
+- Curated collections
+- Recommendations
+- Random discovery

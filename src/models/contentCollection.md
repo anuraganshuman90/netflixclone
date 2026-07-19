@@ -25,6 +25,7 @@ Examples
 - type
 - genre
 - contents
+- onContentSelect
 
 ---
 

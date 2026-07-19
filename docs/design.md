@@ -39,3 +39,25 @@ How could this feature evolve?
 - type
 - genre
 - contents[]
+
+# UI Backlog
+
+## Theme
+- [ ] Global color palette
+- [ ] Typography
+- [ ] Spacing scale
+
+## Homepage
+- [ ] Hero banner
+- [ ] Poster images
+- [ ] Carousel hover
+- [ ] Smooth scrolling
+
+## Navigation
+- [ ] Active page
+- [ ] Mobile menu
+
+## Cards
+- [ ] Hover animation
+- [ ] Shadow
+- [ ] Image loading

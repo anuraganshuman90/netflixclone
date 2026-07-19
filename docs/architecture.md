@@ -110,3 +110,90 @@ movie properties --- anything changes then create new moviecards
 - Store global application state
 - Decide which movie to display
 
+
+
+# Navbar
+- home
+- about
+- settings
+- profile
+
+# should not know
+- data
+- endpoints
+- ContentCard
+- Carousel
+
+# should know
+- link to pages/sections
+
+
+# Phase 3 - Frontend Application Logic
+
+## HomePage
+### Responsibilities
+- composes homepage
+- decides the order of sections (what goes where)
+- pass data to child componenets
+- request homepage data
+### Knows
+- Banner
+- ContentCarousel
+- ContentService
+- Homepage layout
+### Does Not Know
+- How Banner renders itself.
+- How ContentCard renders itself.
+- Where the data comes from.
+- How collections are built.
+- Database implementation.
+
+---
+
+## Banner
+
+### Responsibilities
+
+### Knows
+
+### Does Not Know
+
+---
+
+## ContentCarousel
+
+...
+
+---
+
+## ContentCard
+
+...
+
+---
+
+## ContentService
+
+...
+
+
+## ContentDetails
+
+### Responsibilities
+
+- Display detailed information about one Content.
+- Help the user decide whether to watch it.
+- Display related content.
+- Provide actions (Play, Add to Watchlist, etc. in future).
+
+### Knows
+
+- Content
+- Related Content (future)
+
+### Does Not Know
+
+- How Content is retrieved.
+- How recommendations are generated.
+- How playback works.
+- Database implementation.

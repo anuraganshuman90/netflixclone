@@ -1,0 +1,63 @@
+.banner {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-xl);
+
+    min-height: 400px;
+
+    margin: var(--space-lg);
+    padding: var(--space-lg);
+
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.banner-backdrop {
+    width: 250px;
+    height: 375px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    color: var(--color-secondary);
+}
+
+.banner-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: var(--space-md);
+
+    max-width: 700px;
+}
+
+.banner-title {
+    margin: 0;
+}
+
+.banner-meta {
+    margin: 0;
+
+    color: var(--color-secondary);
+}
+
+.banner-description {
+    margin: 0;
+
+    color: var(--color-secondary);
+
+    line-height: 1.6;
+}

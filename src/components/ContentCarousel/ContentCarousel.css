@@ -1,0 +1,30 @@
+.content-carousel {
+    margin: var(--space-xl) 0;
+}
+
+.carousel-title {
+    color: var(--color-primary);
+
+    margin-bottom: var(--space-md);
+    padding: 0 var(--space-lg);
+}
+
+.carousel-content {
+    display: flex;
+
+    gap: var(--space-md);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 var(--space-lg) var(--space-md);
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari */
+.carousel-content::-webkit-scrollbar {
+    display: none;
+}

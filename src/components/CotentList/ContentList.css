@@ -1,0 +1,10 @@
+.content-list {
+    padding: var(--space-lg);
+}
+
+.list-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    align-items: start;
+}

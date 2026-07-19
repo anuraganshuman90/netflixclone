@@ -1,17 +1,18 @@
 import type { Content } from "../../types/content";
-import "./ContentCard.css"
-interface ContentCardProps {
-    content: Content;
-    onContentSelect: (content: Content) => void;
-}
 
-function ContentCard({ content , onContentSelect}: ContentCardProps) {
-    function handleContentClick() {
-        onContentSelect(content) //should go to homepage i cant write callback
+interface ContentDetailsProps {
+    content: Content;
+    onClose: () => void;
+    onContentSelect: (content: Content) => void ;
+}
+function ContentDetails({ content , onClose }: ContentDetailsProps) {
+    function gotoHome(){
+        onClose();
     }
 
+
     return (
-        <div className="content-card" onClick={handleContentClick} >
+        <div className="content-details">
             <div className="content-poster">
                 <img src={content.poster} />
             </div>
@@ -27,10 +28,14 @@ function ContentCard({ content , onContentSelect}: ContentCardProps) {
                 </p>
                 <p className="content-meta">
                     ⭐ {content.rating}
+                    {content.description}
+                    {content.genres}
+                    {content.language}
                 </p>
+                <button onClick = {gotoHome}>home</button>
             </div>
         </div>
     );
 }
 
-export default ContentCard;
+export default ContentDetails;
