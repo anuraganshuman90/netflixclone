@@ -1,4 +1,4 @@
-
+/*
 import content from "../data/contentData";
 import type { ContentCollection } from "../types/collection";
 import type { Content } from "../types/content";
@@ -71,7 +71,7 @@ function getSciFiCollection(): ContentCollection {
 
 
 export { getHomePageCollections, getFeaturedContent };
-
+*/
 
 /*
 getFeaturedContent()
@@ -89,3 +89,11 @@ getRecentlyAddedCollection()
 getActionCollection()
 */
 
+const API_URL = import.meta.env.VITE_API_URL
+
+async function getAll() {
+ const response  = await fetch(`${API_URL}/content`)
+ return response.json()
+}
+
+export default getAll;
